@@ -1,4 +1,4 @@
-This repository was created to reproduce a bug with next-auth described in [issue](#)
+This repository was created to reproduce a bug with next-auth described in [issue](nextauthjs/next-auth/#625)
 
 It should be noted that this example uses my forked version of next-auth which adds the Bungie provider.
 This fork should have no effect on the issue at play here and was only used for efficiencies sake as I am using it in my own project.
