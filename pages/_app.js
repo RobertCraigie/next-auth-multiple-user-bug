@@ -1,7 +1,20 @@
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import { Provider } from 'next-auth/client';
+
+function App({ Component, pageProps }) {
+  return (
+    <Provider
+      options={{
+        // Update session cache every 1 minute
+        clientMaxAge: 60,
+        keepAlive: 0,
+      }}
+      session={pageProps.session}
+    >
+      <Component {...pageProps} />
+    </Provider>
+  );
 }
 
-export default MyApp
+export default App;
