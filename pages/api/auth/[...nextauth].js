@@ -18,7 +18,7 @@ const options = {
       clientId: process.env.BUNGIE_CLIENT_ID,
       clientSecret: process.env.BUNGIE_SECRET,
       apiKey: process.env.BUNGIE_API_KEY,
-    },
+    }),
   ],
   secret: process.env.SECRET,
   database:  {
